@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Harga — NusaStat</title>
+<meta name="description" content="Inflasi Indonesia 2019–2024: IHK Desember (BPS) dan rata-rata tahunan (Bank Dunia).">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%276%27 fill=%27%230b5d3b%27/%3E%3Ctext x=%2716%27 y=%2723%27 font-size=%2718%27 font-family=%27sans-serif%27 font-weight=%27bold%27 fill=%27white%27 text-anchor=%27middle%27%3EN%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <div class="brand">
+      <h1>Nusa<span class="flag">Stat</span></h1>
+      <p class="tagline">Portal Statistik Nasional Indonesia — data resmi 2019–2024</p>
+    </div>
+    <nav class="site-nav" aria-label="Bagian statistik">
+      <a href="index.html">Beranda</a>
+      <a href="population.html">Penduduk</a>
+      <a href="economy.html">Ekonomi</a>
+      <a href="prices.html">Harga</a>
+      <a href="labour.html">Tenaga Kerja</a>
+      <a href="trade.html">Perdagangan</a>
+      <a href="health.html">Kesehatan</a>
+      <a href="education.html">Pendidikan</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+  <div class="page-head">
+    <h2>Harga</h2>
+    <p>Inflasi Indonesia terjaga di bawah 3% pada sebagian besar periode 2019–2024, kecuali lonjakan 2022 ketika harga energi naik dan harga BBM disesuaikan. Bank Indonesia menargetkan inflasi 2,5% ± 1%.</p>
+  </div>
+
+  <section class="kpi-grid" aria-label="Indikator harga 2024">
+    <div class="kpi">
+      <div class="label">Inflasi Des 2024 (yoy)</div>
+      <div class="value">1,57%</div>
+      <div class="note">BPS, Indeks Harga Konsumen</div>
+    </div>
+    <div class="kpi">
+      <div class="label">Inflasi rata-rata 2024</div>
+      <div class="value">2,18%</div>
+      <div class="note">Bank Dunia, rata-rata tahunan</div>
+    </div>
+    <div class="kpi">
+      <div class="label">Inflasi tertinggi</div>
+      <div class="value red">5,51%</div>
+      <div class="note">Desember 2022 (yoy)</div>
+    </div>
+    <div class="kpi">
+      <div class="label">Inflasi terendah</div>
+      <div class="value">1,57%</div>
+      <div class="note">Desember 2024 (yoy)</div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h3>Inflasi IHK Desember, year-on-year</h3>
+    <p class="sub">% (BPS). Lonjakan 2022 dipicu penyesuaian harga BBM bersubsidi pada September 2022.</p>
+    <canvas data-chart="bars" data-series="cpiDecember" data-decimals="2" height="260" role="img" aria-label="Grafik batang inflasi Desember 2019 sampai 2024"></canvas>
+  </section>
+
+  <section class="card">
+    <h3>Inflasi rata-rata tahunan</h3>
+    <p class="sub">% (Bank Dunia, World Development Indicators). Ukuran ini merata-ratakan inflasi sepanjang tahun, sehingga puncaknya lebih rendah daripada angka Desember 2022.</p>
+    <canvas data-chart="line" data-series="cpiAverage" data-decimals="2" height="260" role="img" aria-label="Grafik garis inflasi rata-rata tahunan 2019 sampai 2024"></canvas>
+  </section>
+
+  <section class="card">
+    <h3>Tabel tahunan</h3>
+    <p class="sub">Inflasi IHK Desember (BPS) dan rata-rata tahunan (Bank Dunia), 2019–2024.</p>
+    <table class="data">
+      <thead><tr><th>Tahun</th><th>IHK Desember, yoy (%)</th><th>Rata-rata tahunan (%)</th></tr></thead>
+      <tbody>
+        <tr><td>2019</td><td>2,72</td><td>3,03</td></tr>
+        <tr><td>2020</td><td>1,68</td><td>1,92</td></tr>
+        <tr><td>2021</td><td>1,87</td><td>1,56</td></tr>
+        <tr><td>2022</td><td>5,51</td><td>4,21</td></tr>
+        <tr><td>2023</td><td>2,61</td><td>3,67</td></tr>
+        <tr><td>2024</td><td>1,57</td><td>2,18</td></tr>
+      </tbody>
+    </table>
+    <p class="sub" style="margin-top:10px">Dua ukuran ini berbeda definisi: angka Desember membandingkan IHK Desember dengan Desember tahun sebelumnya, sedangkan rata-rata tahunan membandingkan rata-rata IHK sepanjang tahun.</p>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p><strong>NusaStat</strong> — portal statistik nasional Indonesia (proyek demo, bukan situs resmi pemerintah).</p>
+    <p>Sumber: Badan Pusat Statistik (BPS) — rilis inflasi bulanan (IHK Desember, year-on-year); Bank Dunia, World Development Indicators — inflasi harga konsumen tahunan (FP.CPI.TOTL.ZG).</p>
+    <p>Angka dibulatkan untuk keterbacaan; untuk angka persisnya, rujuk publikasi asli tiap sumber.</p>
+  </div>
+</footer>
+<script type="module" src="main.js"></script>
+</body>
+</html>

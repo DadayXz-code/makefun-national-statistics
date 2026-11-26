@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pendidikan — NusaStat</title>
+<meta name="description" content="Indeks Pembangunan Manusia, harapan lama sekolah, dan rata-rata lama sekolah Indonesia 2019–2024. Sumber: BPS.">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%276%27 fill=%27%230b5d3b%27/%3E%3Ctext x=%2716%27 y=%2723%27 font-size=%2718%27 font-family=%27sans-serif%27 font-weight=%27bold%27 fill=%27white%27 text-anchor=%27middle%27%3EN%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <div class="brand">
+      <h1>Nusa<span class="flag">Stat</span></h1>
+      <p class="tagline">Portal Statistik Nasional Indonesia — data resmi 2019–2024</p>
+    </div>
+    <nav class="site-nav" aria-label="Bagian statistik">
+      <a href="index.html">Beranda</a>
+      <a href="population.html">Penduduk</a>
+      <a href="economy.html">Ekonomi</a>
+      <a href="prices.html">Harga</a>
+      <a href="labour.html">Tenaga Kerja</a>
+      <a href="trade.html">Perdagangan</a>
+      <a href="health.html">Kesehatan</a>
+      <a href="education.html">Pendidikan</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+  <div class="page-head">
+    <h2>Pendidikan</h2>
+    <p>Pembangunan manusia Indonesia naik setiap tahun pada 2019–2024. Indeks Pembangunan Manusia (IPM) mencapai 75,02 pada 2024 — kategori “tinggi” — didorong umur panjang, lama sekolah, dan standar hidup yang membaik.</p>
+  </div>
+
+  <section class="kpi-grid" aria-label="Indikator pendidikan 2024">
+    <div class="kpi">
+      <div class="label">IPM 2024</div>
+      <div class="value">75,02</div>
+      <div class="note">naik 0,63 poin dari 2023</div>
+    </div>
+    <div class="kpi">
+      <div class="label">Harapan lama sekolah</div>
+      <div class="value">13,21 thn</div>
+      <div class="note">penduduk usia 7+ tahun</div>
+    </div>
+    <div class="kpi">
+      <div class="label">Rata-rata lama sekolah</div>
+      <div class="value">8,97 thn</div>
+      <div class="note">penduduk usia 25+ tahun</div>
+    </div>
+    <div class="kpi">
+      <div class="label">Harapan hidup 2024</div>
+      <div class="value">74,15 thn</div>
+      <div class="note">komponen kesehatan IPM</div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h3>Indeks Pembangunan Manusia 2019–2024</h3>
+    <p class="sub">IPM, skala 0–100 (BPS, seri revisi). Kategori “tinggi” dimulai pada 70.</p>
+    <canvas data-chart="line" data-series="hdi" data-decimals="2" height="260" role="img" aria-label="Grafik garis IPM 2019 sampai 2024"></canvas>
+  </section>
+
+  <div class="two-col">
+    <section class="card">
+      <h3>Harapan lama sekolah</h3>
+      <p class="sub">Tahun (BPS).</p>
+      <canvas data-chart="line" data-series="expectedSchooling" data-decimals="2" height="240" role="img" aria-label="Grafik garis harapan lama sekolah 2019 sampai 2024"></canvas>
+    </section>
+    <section class="card">
+      <h3>Rata-rata lama sekolah</h3>
+      <p class="sub">Tahun, penduduk 25+ (BPS).</p>
+      <canvas data-chart="line" data-series="meanSchooling" data-decimals="2" height="240" role="img" aria-label="Grafik garis rata-rata lama sekolah 2019 sampai 2024"></canvas>
+    </section>
+  </div>
+
+  <section class="card">
+    <h3>Tabel tahunan</h3>
+    <p class="sub">IPM dan komponen pendidikannya, 2019–2024 (BPS).</p>
+    <table class="data">
+      <thead><tr><th>Tahun</th><th>IPM</th><th>Harapan lama sekolah (thn)</th><th>Rata-rata lama sekolah (thn)</th></tr></thead>
+      <tbody>
+        <tr><td>2019</td><td>71,92</td><td>12,87</td><td>8,34</td></tr>
+        <tr><td>2020</td><td>72,81</td><td>12,98</td><td>8,36</td></tr>
+        <tr><td>2021</td><td>73,16</td><td>13,05</td><td>8,54</td></tr>
+        <tr><td>2022</td><td>73,77</td><td>13,10</td><td>8,69</td></tr>
+        <tr><td>2023</td><td>74,39</td><td>13,15</td><td>8,82</td></tr>
+        <tr><td>2024</td><td>75,02</td><td>13,21</td><td>8,97</td></tr>
+      </tbody>
+    </table>
+    <p class="sub" style="margin-top:10px">IPM menggabungkan tiga dimensi: kesehatan (angka harapan hidup), pengetahuan (harapan dan rata-rata lama sekolah), dan standar hidup layak (pengeluaran per kapita yang disesuaikan).</p>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p><strong>NusaStat</strong> — portal statistik nasional Indonesia (proyek demo, bukan situs resmi pemerintah).</p>
+    <p>Sumber: Badan Pusat Statistik (BPS) — Indeks Pembangunan Manusia (IPM) 2019–2024, Berita Resmi Statistik; seri revisi rilis 2025–2026.</p>
+    <p>Angka dibulatkan untuk keterbacaan; untuk angka persisnya, rujuk publikasi asli BPS.</p>
+  </div>
+</footer>
+<script type="module" src="main.js"></script>
+</body>
+</html>

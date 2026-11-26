@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NusaStat — Portal Statistik Nasional Indonesia</title>
+<meta name="description" content="NusaStat: angka resmi Indonesia 2019–2024 — penduduk, ekonomi, harga, tenaga kerja, perdagangan, kesehatan, dan pendidikan. Sumber: BPS, Bank Dunia, Kemenkes.">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%276%27 fill=%27%230b5d3b%27/%3E%3Ctext x=%2716%27 y=%2723%27 font-size=%2718%27 font-family=%27sans-serif%27 font-weight=%27bold%27 fill=%27white%27 text-anchor=%27middle%27%3EN%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <div class="brand">
+      <h1>Nusa<span class="flag">Stat</span></h1>
+      <p class="tagline">Portal Statistik Nasional Indonesia — data resmi 2019–2024</p>
+    </div>
+    <nav class="site-nav" aria-label="Bagian statistik">
+      <a href="index.html">Beranda</a>
+      <a href="population.html">Penduduk</a>
+      <a href="economy.html">Ekonomi</a>
+      <a href="prices.html">Harga</a>
+      <a href="labour.html">Tenaga Kerja</a>
+      <a href="trade.html">Perdagangan</a>
+      <a href="health.html">Kesehatan</a>
+      <a href="education.html">Pendidikan</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+  <div class="page-head">
+    <h2>Indonesia dalam angka</h2>
+    <p>Indikator utama pembangunan Indonesia dari sumber resmi — Badan Pusat Statistik (BPS), Bank Dunia, dan Kementerian Kesehatan. Semua grafik digambar di perangkat Anda; situs ini tidak memuat apa pun dari internet saat dibuka.</p>
+  </div>
+
+  <section class="kpi-grid" aria-label="Indikator utama 2024">
+    <div class="kpi">
+      <div class="label">Penduduk 2024</div>
+      <div class="value">281,6 jt</div>
+      <div class="note">tumbuh <span class="delta">+1,04%</span> dari 2023</div>
+    </div>
+    <div class="kpi">
+      <div class="label">Pertumbuhan ekonomi 2024</div>
+      <div class="value">5,03%</div>
+      <div class="note">PDB US$1,40 triliun (Bank Dunia)</div>
+    </div>
+    <div class="kpi">
+      <div class="label">Inflasi Des 2024 (yoy)</div>
+      <div class="value">1,57%</div>
+      <div class="note">turun dari 2,61% pada 2023</div>
+    </div>
+    <div class="kpi">
+      <div class="label">Pengangguran Agu 2024</div>
+      <div class="value">4,91%</div>
+      <div class="note">terendah sejak sebelum pandemi</div>
+    </div>
+    <div class="kpi">
+      <div class="label">Kemiskinan Sep 2024</div>
+      <div class="value">8,57%</div>
+      <div class="note">24,06 juta penduduk miskin</div>
+    </div>
+    <div class="kpi">
+      <div class="label">Stunting balita 2024</div>
+      <div class="value">19,8%</div>
+      <div class="note">di bawah 20% untuk pertama kali</div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h3>Pertumbuhan ekonomi 2019–2024</h3>
+    <p class="sub">Pertumbuhan PDB riil, % per tahun (BPS). Kontraksi 2020 adalah dampak pandemi COVID-19; pemulihan penuh tercapai pada 2022.</p>
+    <canvas data-chart="bars" data-series="gdpGrowth" data-decimals="2" height="260" role="img" aria-label="Grafik batang pertumbuhan PDB 2019 sampai 2024"></canvas>
+  </section>
+
+  <div class="two-col">
+    <section class="card">
+      <h3>Penduduk terus bertambah</h3>
+      <p class="sub">Juta jiwa, pertengahan tahun (BPS).</p>
+      <canvas data-chart="line" data-series="population" data-decimals="1" height="240" role="img" aria-label="Grafik garis jumlah penduduk 2019 sampai 2024"></canvas>
+    </section>
+    <section class="card">
+      <h3>Kemiskinan menurun</h3>
+      <p class="sub">Persentase penduduk miskin, September (BPS).</p>
+      <canvas data-chart="line" data-series="poverty" data-decimals="2" height="240" role="img" aria-label="Grafik garis tingkat kemiskinan 2019 sampai 2024"></canvas>
+    </section>
+  </div>
+
+  <section class="card">
+    <h3>Jelajahi per topik</h3>
+    <p class="sub">Setiap halaman memuat grafik, tabel tahunan 2019–2024, dan catatan sumber.</p>
+    <div class="section-links">
+      <a href="population.html"><strong>Penduduk</strong><span>281,6 juta jiwa, sebaran provinsi, kepadatan.</span></a>
+      <a href="economy.html"><strong>Ekonomi</strong><span>Pertumbuhan PDB, PDB per kapita, IPM.</span></a>
+      <a href="prices.html"><strong>Harga</strong><span>Inflasi IHK Desember dan rata-rata tahunan.</span></a>
+      <a href="labour.html"><strong>Tenaga Kerja</strong><span>Pengangguran terbuka, angkatan kerja.</span></a>
+      <a href="trade.html"><strong>Perdagangan</strong><span>Ekspor, impor, dan neraca perdagangan.</span></a>
+      <a href="health.html"><strong>Kesehatan</strong><span>Stunting balita, gizi, harapan hidup.</span></a>
+      <a href="education.html"><strong>Pendidikan</strong><span>Lama sekolah, IPM, pembangunan manusia.</span></a>
+    </div>
+  </section>
+
+  <section class="card">
+    <h3>Yang perlu diketahui</h3>
+    <ul class="tight">
+      <li><strong>Angka 2024 adalah angka resmi terbaru</strong> yang dirilis BPS dan Kemenkes hingga rilis terakhir masing-masing (lihat catatan sumber di tiap halaman).</li>
+      <li><strong>Stunting 2020 kosong</strong> — survei SSGI tidak dilaksanakan pada tahun pandemi; 2023 memakai Survei Kesehatan Indonesia (SKI).</li>
+      <li><strong>IPM memakai seri revisi BPS</strong> (rilis 2025–2026); nilai 2019–2021 sudah disesuaikan dengan metode terbaru.</li>
+      <li>Situs ini statis: tidak ada pelacak, iklan, atau panggilan jaringan saat dibuka.</li>
+    </ul>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p><strong>NusaStat</strong> — portal statistik nasional Indonesia (proyek demo, bukan situs resmi pemerintah).</p>
+    <p>Sumber data: Badan Pusat Statistik (BPS) — bps.go.id; Bank Dunia, World Development Indicators; Kementerian Kesehatan RI — Survei Status Gizi Indonesia (SSGI) dan Survei Kesehatan Indonesia (SKI).</p>
+    <p>Angka dibulatkan untuk keterbacaan; untuk angka persisnya, rujuk publikasi asli tiap sumber. Data terakhir diperbarui: November 2026.</p>
+  </div>
+</footer>
+<script type="module" src="main.js"></script>
+</body>
+</html>

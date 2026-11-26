@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Perdagangan — NusaStat</title>
+<meta name="description" content="Ekspor, impor, dan neraca perdagangan Indonesia 2019–2024. Sumber: BPS.">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%276%27 fill=%27%230b5d3b%27/%3E%3Ctext x=%2716%27 y=%2723%27 font-size=%2718%27 font-family=%27sans-serif%27 font-weight=%27bold%27 fill=%27white%27 text-anchor=%27middle%27%3EN%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <div class="brand">
+      <h1>Nusa<span class="flag">Stat</span></h1>
+      <p class="tagline">Portal Statistik Nasional Indonesia — data resmi 2019–2024</p>
+    </div>
+    <nav class="site-nav" aria-label="Bagian statistik">
+      <a href="index.html">Beranda</a>
+      <a href="population.html">Penduduk</a>
+      <a href="economy.html">Ekonomi</a>
+      <a href="prices.html">Harga</a>
+      <a href="labour.html">Tenaga Kerja</a>
+      <a href="trade.html">Perdagangan</a>
+      <a href="health.html">Kesehatan</a>
+      <a href="education.html">Pendidikan</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+  <div class="page-head">
+    <h2>Perdagangan</h2>
+    <p>Ekspor Indonesia melonjak pada 2021–2022 mengikuti harga komoditas dunia — batu bara, minyak sawit, dan nikel — lalu terkoreksi pada 2023. Neraca perdagangan surplus setiap tahun sejak 2020.</p>
+  </div>
+
+  <section class="kpi-grid" aria-label="Indikator perdagangan 2024">
+    <div class="kpi">
+      <div class="label">Ekspor 2024</div>
+      <div class="value">US$264,7 M</div>
+      <div class="note">naik dari US$258,8 M pada 2023</div>
+    </div>
+    <div class="kpi">
+      <div class="label">Impor 2024</div>
+      <div class="value">US$233,7 M</div>
+      <div class="note">bahan baku dan barang modal dominan</div>
+    </div>
+    <div class="kpi">
+      <div class="label">Surplus 2024</div>
+      <div class="value">US$31,0 M</div>
+      <div class="note">surplus tahun kelima berturut-turut</div>
+    </div>
+    <div class="kpi">
+      <div class="label">Ekspor tertinggi</div>
+      <div class="value">US$291,9 M</div>
+      <div class="note">tahun 2022, puncak komoditas</div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h3>Ekspor dan impor 2019–2024</h3>
+    <p class="sub">Miliar USD (BPS). Batang hijau = ekspor, batang biru = impor.</p>
+    <canvas data-chart="grouped" data-series="exports, imports" data-labels="Ekspor|Impor" data-decimals="1" height="280" role="img" aria-label="Grafik batang ekspor dan impor 2019 sampai 2024"></canvas>
+  </section>
+
+  <section class="card">
+    <h3>Neraca perdagangan 2019–2024</h3>
+    <p class="sub">Miliar USD (BPS). Satu-satunya defisit pada periode ini terjadi pada 2019.</p>
+    <canvas data-chart="bars" data-series="balance" data-decimals="1" height="260" role="img" aria-label="Grafik batang neraca perdagangan 2019 sampai 2024"></canvas>
+  </section>
+
+  <section class="card">
+    <h3>Tabel tahunan</h3>
+    <p class="sub">Ekspor, impor, dan neraca perdagangan, miliar USD, 2019–2024 (BPS).</p>
+    <table class="data">
+      <thead><tr><th>Tahun</th><th>Ekspor</th><th>Impor</th><th>Neraca</th></tr></thead>
+      <tbody>
+        <tr><td>2019</td><td>167,7</td><td>171,3</td><td class="neg">−3,6</td></tr>
+        <tr><td>2020</td><td>163,2</td><td>141,6</td><td>21,6</td></tr>
+        <tr><td>2021</td><td>231,6</td><td>196,2</td><td>35,4</td></tr>
+        <tr><td>2022</td><td>291,9</td><td>237,5</td><td>54,4</td></tr>
+        <tr><td>2023</td><td>258,8</td><td>221,9</td><td>36,9</td></tr>
+        <tr><td>2024</td><td>264,7</td><td>233,7</td><td>31,0</td></tr>
+      </tbody>
+    </table>
+    <p class="sub" style="margin-top:10px">Surplus 2020 terbentuk karena impor jatuh lebih dalam daripada ekspor saat pandemi; surplus 2022 didorong rekor harga batu bara dan minyak sawit.</p>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p><strong>NusaStat</strong> — portal statistik nasional Indonesia (proyek demo, bukan situs resmi pemerintah).</p>
+    <p>Sumber: Badan Pusat Statistik (BPS) — statistik ekspor-impor tahunan; Berita Resmi Statistik perdagangan luar negeri.</p>
+    <p>Angka dibulatkan untuk keterbacaan; untuk angka persisnya, rujuk publikasi asli BPS.</p>
+  </div>
+</footer>
+<script type="module" src="main.js"></script>
+</body>
+</html>

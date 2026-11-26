@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kesehatan — NusaStat</title>
+<meta name="description" content="Prevalensi stunting balita Indonesia 2019–2024 (SSGI), status gizi, dan angka harapan hidup. Sumber: Kemenkes dan BPS.">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%276%27 fill=%27%230b5d3b%27/%3E%3Ctext x=%2716%27 y=%2723%27 font-size=%2718%27 font-family=%27sans-serif%27 font-weight=%27bold%27 fill=%27white%27 text-anchor=%27middle%27%3EN%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <div class="brand">
+      <h1>Nusa<span class="flag">Stat</span></h1>
+      <p class="tagline">Portal Statistik Nasional Indonesia — data resmi 2019–2024</p>
+    </div>
+    <nav class="site-nav" aria-label="Bagian statistik">
+      <a href="index.html">Beranda</a>
+      <a href="population.html">Penduduk</a>
+      <a href="economy.html">Ekonomi</a>
+      <a href="prices.html">Harga</a>
+      <a href="labour.html">Tenaga Kerja</a>
+      <a href="trade.html">Perdagangan</a>
+      <a href="health.html">Kesehatan</a>
+      <a href="education.html">Pendidikan</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+  <div class="page-head">
+    <h2>Kesehatan</h2>
+    <p>Prevalensi stunting balita turun dari 27,7% pada 2019 menjadi 19,8% pada 2024 — pertama kali di bawah ambang 20% yang ditetapkan WHO sebagai masalah kesehatan masyarakat. Target pemerintah adalah 14,2% pada 2029.</p>
+  </div>
+
+  <section class="kpi-grid" aria-label="Indikator kesehatan 2024">
+    <div class="kpi">
+      <div class="label">Stunting balita 2024</div>
+      <div class="value">19,8%</div>
+      <div class="note">≈ 4,48 juta balita (SSGI)</div>
+    </div>
+    <div class="kpi">
+      <div class="label">Wasting 2024</div>
+      <div class="value">7,4%</div>
+      <div class="note">balita kurus, SSGI 2024</div>
+    </div>
+    <div class="kpi">
+      <div class="label">Underweight 2024</div>
+      <div class="value">16,8%</div>
+      <div class="note">balita berat kurang, SSGI 2024</div>
+    </div>
+    <div class="kpi">
+      <div class="label">Harapan hidup 2024</div>
+      <div class="value">74,15 thn</div>
+      <div class="note">naik dari 73,93 pada 2023</div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h3>Prevalensi stunting balita 2019–2024</h3>
+    <p class="sub">% balita (Kemenkes — SSGI; 2020 tidak ada survei, 2023 dari SKI).</p>
+    <canvas data-chart="line" data-series="stunting" data-decimals="1" height="260" role="img" aria-label="Grafik garis prevalensi stunting 2019 sampai 2024"></canvas>
+  </section>
+
+  <div class="two-col">
+    <section class="card">
+      <h3>Stunting menurut provinsi, 2024</h3>
+      <p class="sub">% balita (SSGI 2024). Kesenjangan antar daerah masih lebar.</p>
+      <table class="data">
+        <thead><tr><th>Provinsi</th><th>Stunting (%)</th></tr></thead>
+        <tbody>
+          <tr><td>Papua Pegunungan</td><td>40,0</td></tr>
+          <tr><td>Nusa Tenggara Timur</td><td>37,0</td></tr>
+          <tr><td>Sulawesi Barat</td><td>35,4</td></tr>
+          <tr><td>Bali (terendah)</td><td>8,7</td></tr>
+        </tbody>
+      </table>
+    </section>
+    <section class="card">
+      <h3>Tabel tahunan</h3>
+      <p class="sub">Prevalensi stunting nasional, % balita.</p>
+      <table class="data">
+        <thead><tr><th>Tahun</th><th>Stunting (%)</th><th>Survei</th></tr></thead>
+        <tbody>
+          <tr><td>2019</td><td>27,7</td><td>SSGI</td></tr>
+          <tr><td>2020</td><td>—</td><td>Tidak ada survei</td></tr>
+          <tr><td>2021</td><td>24,4</td><td>SSGI</td></tr>
+          <tr><td>2022</td><td>21,6</td><td>SSGI</td></tr>
+          <tr><td>2023</td><td>21,5</td><td>SKI</td></tr>
+          <tr><td>2024</td><td>19,8</td><td>SSGI</td></tr>
+        </tbody>
+      </table>
+      <p class="sub" style="margin-top:10px">Penurunan 2022–2023 nyaris stagnan (hanya 0,1 poin), lalu kembali turun 1,7 poin pada 2024.</p>
+    </section>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p><strong>NusaStat</strong> — portal statistik nasional Indonesia (proyek demo, bukan situs resmi pemerintah).</p>
+    <p>Sumber: Kementerian Kesehatan RI — Hasil Survei Status Gizi Indonesia (SSGI) 2019, 2021, 2022, 2024 dan Survei Kesehatan Indonesia (SKI) 2023; Badan Pusat Statistik (BPS) — Angka Harapan Hidup.</p>
+    <p>Angka dibulatkan untuk keterbacaan; untuk angka persisnya, rujuk publikasi asli Kemenkes dan BPS.</p>
+  </div>
+</footer>
+<script type="module" src="main.js"></script>
+</body>
+</html>

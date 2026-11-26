@@ -1,0 +1,127 @@
+/* NusaStat — portal statistik nasional Indonesia. Gaya datar, kontras
+   tinggi, tanpa gambar eksternal: semua warna dan bentuk dari CSS. */
+:root {
+  --green: #0b5d3b;
+  --green-dark: #083f28;
+  --green-soft: #e6f2ec;
+  --red: #c8102e;
+  --blue: #2e86ab;
+  --ink: #1d2b22;
+  --muted: #5a625c;
+  --line: #dfe5df;
+  --card: #ffffff;
+  --bg: #f4f6f4;
+  --radius: 10px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.55;
+}
+
+a { color: var(--green); }
+
+.site-header {
+  background: var(--green);
+  color: #fff;
+  padding: 18px 0 0;
+}
+
+.site-header .wrap { max-width: 1080px; margin: 0 auto; padding: 0 20px; }
+
+.brand { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+.brand h1 { margin: 0; font-size: 30px; letter-spacing: 0.5px; }
+.brand h1 .flag { color: #ff5a5a; }
+.brand .tagline { margin: 0; font-size: 14px; opacity: 0.92; }
+
+.site-nav {
+  display: flex; flex-wrap: wrap; gap: 4px;
+  margin-top: 14px; padding-bottom: 0;
+}
+.site-nav a {
+  color: #d9eadf; text-decoration: none; font-size: 14px;
+  padding: 8px 12px; border-radius: 8px 8px 0 0;
+}
+.site-nav a:hover { background: var(--green-dark); color: #fff; }
+.site-nav a.active { background: var(--bg); color: var(--green); font-weight: 700; }
+
+main.wrap { max-width: 1080px; margin: 0 auto; padding: 24px 20px 40px; }
+
+.page-head h2 { margin: 0 0 6px; font-size: 26px; }
+.page-head p { margin: 0 0 20px; color: var(--muted); max-width: 72ch; }
+
+.kpi-grid {
+  display: grid; gap: 14px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin: 0 0 22px;
+}
+.kpi {
+  background: var(--card); border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 16px 18px;
+}
+.kpi .label { font-size: 13px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.4px; }
+.kpi .value { font-size: 30px; font-weight: 800; color: var(--green); margin: 2px 0; }
+.kpi .value.red { color: var(--red); }
+.kpi .note { font-size: 13px; color: var(--muted); }
+.kpi .delta { font-weight: 700; color: var(--green); }
+.kpi .delta.down { color: var(--red); }
+
+.card {
+  background: var(--card); border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 20px; margin-bottom: 22px;
+}
+.card h3 { margin: 0 0 4px; font-size: 19px; }
+.card .sub { margin: 0 0 12px; color: var(--muted); font-size: 14px; }
+.card canvas { width: 100%; display: block; }
+
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+@media (max-width: 760px) { .two-col { grid-template-columns: 1fr; } }
+
+table.data {
+  width: 100%; border-collapse: collapse; font-size: 14px;
+}
+table.data th, table.data td {
+  padding: 8px 10px; text-align: right;
+  border-bottom: 1px solid var(--line); white-space: nowrap;
+}
+table.data th:first-child, table.data td:first-child { text-align: left; }
+table.data thead th { background: var(--green-soft); color: var(--green-dark); }
+table.data tbody tr:hover { background: #f2f7f3; }
+table.data .neg { color: var(--red); font-weight: 700; }
+
+ul.tight { margin: 6px 0 0; padding-left: 20px; }
+ul.tight li { margin-bottom: 6px; }
+
+.section-links {
+  display: grid; gap: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+.section-links a {
+  display: block; background: var(--card); border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 14px 16px; text-decoration: none;
+}
+.section-links a strong { display: block; color: var(--green); font-size: 16px; }
+.section-links a span { color: var(--muted); font-size: 13px; }
+.section-links a:hover { border-color: var(--green); }
+
+.site-footer {
+  border-top: 3px solid var(--green);
+  background: #fff; padding: 20px 0 28px;
+  font-size: 13px; color: var(--muted);
+}
+.site-footer .wrap { max-width: 1080px; margin: 0 auto; padding: 0 20px; }
+.site-footer p { margin: 4px 0; }
+
+@media (max-width: 640px) {
+  .brand h1 { font-size: 24px; }
+  .page-head h2 { font-size: 22px; }
+  .kpi .value { font-size: 25px; }
+  .site-nav a { padding: 7px 9px; font-size: 13px; }
+  table.data { font-size: 12.5px; }
+  table.data th, table.data td { padding: 6px 6px; }
+}
